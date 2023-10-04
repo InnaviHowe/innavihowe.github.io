@@ -1,0 +1,315 @@
+/* My own font */
+/* CSS file for my_Portfoliov1 */
+@font-face {
+    font-family: 'Streetschronic Font';
+    src: 
+    local('Streetschronic Font'),
+    local('StreetschronicFont'),
+    url('./StreetschronicFont-Regular-_14_.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --all_font: 'Streetschronic Font', sans-serif;
+    --info_font: Arial, Helvetica, sans-serif;
+    --color-azure: azure;
+    --color-black: black;
+    --color-brown: brown;
+    --color-choco: rgb(80, 53, 18);
+    --color-fgreen: forestgreen;
+    --color-orange: orange;
+    --color-tan: tan;
+    --color-white: white;
+    --color-boxshadow: rgba(240, 251, 27, 0.75);
+}
+*{
+    font-family: var(--all_font); /*'Streetschronic Font', sans-serif; */
+    font-size: 18px;
+    /*font-size: 10px; // arial size */
+    color: var(--color-black);
+}
+
+/* Container for all page elements
+Styling for grid-item divs to make alternating colours */
+.container {
+    /* background-image: url('images/crick_lsmallevgreen1.png');
+    background-size: 80% 80%; */
+    /* background-position: center; */
+    /*background-repeat: no-repeat; */
+    background-color: var(--color-wheat);
+    padding: 2rem;
+}
+
+h2 {
+    /* font-family: 'Streetschronic Font', sans-serif; */
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.75rem;
+}
+h4 {
+    text-align: center;
+}
+p {
+    font-size: 1.5rem;
+}
+li {
+    font-family: var(--info_font);
+    font-size: 1rem;
+}
+/* ----- CSS for header FLEX LAYOUT*/
+header {
+    display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--color-fgreen);
+	padding: 1.5% 1.5% 1.5% 1.5%; 
+}
+header h1 {
+    /* font-family: 'Streetschronic Font', sans-serif; */
+    font-size: 3rem;
+    color: var(--color-tan);
+    text-align: center;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+header .header-navbar {
+    display: flex;
+    align-items:center;
+	justify-content: space-between;
+}
+.navbar-box {
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    margin: 0.4rem;
+}
+header .header-navbar a {
+    text-decoration: none;
+    /* font-family: 'Streetschronic Font', sans-serif; */
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--color-azure);
+    padding: 0.5rem 0.2rem 0.2rem 0.2rem;
+    margin: 0.5rem 0.25rem 0.5rem 0.25rem;   
+}
+.navbar-box:hover {
+    box-shadow: 0.2rem 0.2rem 0.2rem var(--color-boxshadow);
+}
+header .header-navbar a:hover {
+    text-decoration: none;
+    color: var(--color-orange);
+}
+/* END OF HEADER SECTION */
+
+/* ---------- CSS for MAIN */
+
+/* div welcome */
+main {
+    /* border: 2px solid red; */
+    padding: 1.5% 1.5% 1.5% 1.5%; 
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    border: var(--border-green);
+    background-color: var(--color-fgreen);
+    font-size: 28px;
+    padding: 1.5% 1.5% 1.5% 1.5%;
+    margin: 0px 0px 10px 0px;
+}
+details {
+    /* font-family: 'Streetschronic Font', sans-serif; */
+    font-size: 28px;
+    /* background-color: var(--color-fgreen); */
+    border: var(--border-choco);
+    padding: 2px;
+    margin: 2px;
+    /* width:80%; */
+}
+summary {
+    /* font-family: 'Streetschronic Font', sans-serif; */
+    font-size: 1.25rem;
+    text-align: center;
+    background-color: var(--color-tan);
+    border: var(--color-choco) 3px solid;
+    padding: 2px;
+    /* margin:5px; */
+}
+legend {
+    /* font-family:'Streetschronic Font'; */
+    font-size:24px;
+    font-weight: bold;
+}
+
+
+/* informations div*/
+.informations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+	align-items: center;
+	justify-content:space-around;
+	/* background-color: var(--color-fgreen); */
+	padding: 1.5% 1.5% 1.5% 1.5%; 
+}
+.info-card {
+    border: 2px solid var(--color-fgreen);
+    font-size: 1.25rem;
+    margin: 1.5% 1.5% 1.5% 1.5%; 
+    padding: 1.5% 1.5% 1.5% 1.5%;
+}
+
+/* ------ Timetable div */
+/* CSS for ALL tables */
+table {
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border: 2px solid var(--color-choco);
+    background-color: var(--color-white);
+    box-shadow: 0.2rem 0.2rem 0.2rem var(--color-boxshadow);
+}
+/* CSS for genric table */
+td, th {
+    color: var(--color-black);
+    text-align: left;
+    /* font-family:'Streetschronic Font'; */
+    border-bottom: 1px solid var(--color-black);
+    font-size: 1.2rem;
+    padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+}
+
+/* ---------------------- */
+/* CSS for table displaying opening times  */
+.table-timetable {
+    width: 30%vw;
+    height: 252px;
+}
+
+/* ---------------------- */
+/* CSS to for ALL table header font-weight */
+.table-bold-header {
+    font-weight: bolder;
+}
+/* CSS for all table data span tags */
+td > span {
+    color: var(--color-black);
+    font-size: 1.5em; 
+}
+
+/* END OF MAIN SECTION*/
+.backlit {
+    background-color: var(--color-tan);
+}
+/* CSS back color highlight
+ for */
+.not-backlit {
+    font-family: var(--info_font);
+    font-size: 0.9rem;
+    color: var(--color-choco);
+}
+/* CSS for Glends address */
+.big-backlit {
+    font-size: 1.5rem;
+    font-weight:bold;
+}
+
+
+
+/* CSS for FORM */
+form {
+    box-shadow: 10px 10px 10px rgba(68, 150, 14, 0.75);
+    padding:0.2rem;
+    width:90%;
+}
+
+input[type="submit"] {
+    font-size:1.25rem;
+    font-weight: bolder;
+    text-align: center;
+    font-weight:25px;
+}
+input[type="text"] {
+    font-family: var(--info_font);
+    font-size: 0.75rem;
+}
+input[type="email"] {
+    font-family: var(--info_font);
+    font-size:0.75rem;
+}
+input[type="button"] {
+    font-size:1.25rem;
+    font-weight: bolder;
+    text-align: center;
+    color:rgb(80, 53, 18);
+}
+input[type="number"] {
+    font-size:1.25rem;
+    font-weight:bold;
+    max-width: 60px;
+    text-align: center;
+}
+label {
+    font-family: var(--all_font); /*'Streetschronic Font'; */
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#orderer_connumber {
+    width: 100px;
+}
+#orderer_conemail {
+    width:60%;
+}
+#orderer_addressline {
+    width:62%;
+}
+#orderer_postcode {
+    width: 80px;
+}
+caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* HEADER MEDIA */
+@media (max-width:1350px) and (min-width:1069px) {
+    header h1 {
+        font-size: 3rem ;
+    }
+}
+@media (max-width:1068px) and (min-width:881px)  {
+    header .header-navbar a { 
+        font-size: 1.25rem ;
+    }
+}
+@media (max-width:973px) and (min-width:928px)  {
+    header h1 {
+        font-size: 2.75rem ;
+    }
+}
+@media (max-width:927px) and (min-width:884px)  {
+    header h1 {
+        font-size: 2.50rem ;
+    }
+}
+@media (max-width:883px) and (min-width:450px)  {
+    header h1 {
+        font-size: 2.2rem ;
+    }
+    header .header-navbar { 
+        flex-wrap: wrap;
+        font-size: 1.1rem ;
+    }
+    header .header-navbar a { 
+        font-size: 1.1rem ;
+    }
+}
+
+
+
