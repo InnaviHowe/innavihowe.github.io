@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
 
+    <title>All for the Melee </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div id="splash-screen"></div>
+
+    <div id="splash-gamebegin-newgame">
+        <h1 id="game-title"></h1>
+        <p class="message-info" id="game-welcome"></p>
+        <button id="btn-gamebegin-newgame"></button><br>
+        <button id="btn-gamebegin-howtoplay"></button><br>
+        <button id="btn-gamebegin-about"></button>
+    </div>
+
+    <div id="splash-game-howtoplay">
+      <h1 id="game-rules"></h1>
+      <p class="message-info" id="game-howto"></p>
+      <button id="btn-close-HowTo"></button>
+    </div>
+
+    <div id="splash-game-about">
+      <h1 id="game-about"></h1>
+      <p class="message-info" id="game-aboutgame"></p>
+      <button id="btn-close-about"></button>
+    </div>
+
+    <div id="splash-gamepause">
+      <h1 id="game-pausing"></h1>
+      <button id="btn-gamepause"></button>
+    </div>
+
+    <div id="splash-gameover-playagain">
+        <h1 id="game-loser"></h1>
+        <p class="message-info" id="message-failure"></p>
+        <button id="btn-gameover-playagain"></button>
+        <br>
+        <button id="btn-gameover-exit"></button>
+    </div>
+
+    <div id="splash-gamewon">
+      <h1 id="game-winner"></h1>
+      <p class="message-info" id="message-success"></p>
+      <button id="btn-gamewon-exit"></button>
+    </div>
+
+    <div id="splash-nextlevel">
+      <h1 id="game-levelcongrats"></h1>
+      <p class="message-info" id="message-nextlevel"></p>
+      <button id="btn-nextLevel"></button>
+    </div>
+
+    <div class="player-info">
+        <div id="player-info-ammo"></div>
+        <div id="player-score"></div>
+    </div>
+    
+    <script type="text/javascript" src="js/resources.js"></script>
+    <script type="text/javascript" src="js/input.js"></script>
+    <script type="text/javascript" src="js/sprite.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
